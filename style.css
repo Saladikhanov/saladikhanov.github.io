@@ -1,0 +1,56 @@
+body {
+  background-color: #ffc300;
+  font-family: "Oswald", sans-serif;
+}
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.navbar {
+  display: flex;
+  background-color: #000;
+  justify-content: flex-end;
+}
+.nav_item {
+  list-style-type: none;
+}
+.nav_link {
+  color: #ffd60a;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+}
+.nav_link:hover {
+  color: #ffc300;
+}
+.social-wrapper {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+.icons_links {
+  width: 50px;
+  /* padding: ; */
+  margin: 20%;
+}
+.anchor-box {
+  display: flex;
+  justify-content: center;
+
+  /* width: 30%; */
+}
+
+.video {
+  width: 40%;
+  /* height: 480px; */
+}
+.github-image-holder {
+  display: flex;
+  justify-content: center;
+}
+.github-image {
+  width: 20%;
+  border-radius: 50%;
+}
