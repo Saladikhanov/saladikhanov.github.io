@@ -54,3 +54,26 @@ body {
   width: 20%;
   border-radius: 50%;
 }
+/* --------------------about----------------------- */
+.buttons {
+  border-radius: 3px;
+}
+/* --------------------Contact-------------------------- */
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.555);
+  border-radius: 5px;
+  padding: 20px;
+  /* shadows box */
+  box-shadow: -25px -14px 86px -14px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: -25px -14px 86px -14px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: -25px -14px 86px -14px rgba(0, 0, 0, 0.54);
+}
+.inputs {
+  margin: 5px;
+  border-radius: 5px;
+  height: 40px;
+}
