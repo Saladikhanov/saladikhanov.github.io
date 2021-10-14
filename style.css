@@ -75,7 +75,11 @@ body {
   border-radius: 3px;
 }
 /* --------------------Contact-------------------------- */
+.announce {
+  font-size: 10em;
+}
 .input_wrapper {
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -95,6 +99,11 @@ body {
 }
 
 /* modal */
+.future-meetings {
+  border-radius: 5px;
+  margin-left: 55%;
+  /* background-color: #000; */
+}
 .modal-window,
 .modal-overlay {
   opacity: 0;
