@@ -128,7 +128,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
 }
 .amodal.hide .modal-window {
-  transform: translateY(-300px);
+  transform: translateY(-1000px);
 }
 .amodal.hide .modal-overlay {
   z-index: -1;
@@ -147,7 +147,7 @@ body {
 .modal-window {
   /* display: flex; */
   justify-content: center;
-  width: 1000px;
+  width: 80%;
   border-radius: 5px;
   background: #fff;
   margin: 0px auto;
@@ -180,4 +180,11 @@ body {
 }
 .event {
   margin: 10px;
+}
+.modal-calendar {
+  display: inline-flex;
+}
+.modal-wrapper-flex {
+  display: flex;
+  flex-direction: row;
 }

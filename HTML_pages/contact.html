@@ -11,6 +11,11 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css"
+    />
+
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
@@ -34,7 +39,8 @@
         </li>
       </ul>
       <h1 class="announce">LEAVE ME A MESSAGE!</h1>
-      <div class="input_wrapper">
+
+      <form class="input_wrapper">
         <input
           id="nameInput"
           class="inputs"
@@ -74,7 +80,7 @@
           rows="3"
         ></textarea>
         <button id="submit" type="button" class="btn btn-dark">Submit</button>
-      </div>
+      </form>
       <button id="myModal" class="future-meetings btn btn-dark">
         Future meetings
       </button>
@@ -85,7 +91,7 @@
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
     <script src="../JS/contact.js"></script>
   </body>
 </html>

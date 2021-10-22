@@ -9,11 +9,14 @@ function _createModal(options) {
     `<div class="modal-overlay">
           <div class="modal-window">
             <div class="modal-header">
+            
               <div class="modal-title">Upcoming meetings</div>
               <div id="close" class="modal-close">&times;</div>
             </div>
-            <div id="calendarResults" class="modal-body">
-              
+            <div class="modal-wrapper-flex">
+              <div class="modal-calendar" id="color-calendar"></div>
+              <div id="calendarResults" class="modal-body">
+            </div>
             </div>
             <div class="modal-footer">
               
@@ -53,7 +56,7 @@ close.addEventListener("click", modal.close);
 // <<<<<<<<-----------------------------------------------_>>>>>>>>>>>>>>>>
 
 let userObject = [];
-
+const users = {};
 const submit = document.getElementById("submit");
 const calendarWrapper = document.getElementById("calendarResults");
 
@@ -74,14 +77,30 @@ submit.addEventListener("click", function () {
     const userNumber = document.getElementById("numberInput").value;
     const userDate = document.getElementById("dateInput").value;
     const userComments = document.getElementById("commentsInput").value;
+    let ID = "id" + new Date().getTime();
+
     userObject.push({
+      key: ID,
       user: userName,
       userSurname: userSurname,
       userEmail: userEmail,
       userNumber: userNumber,
       userDate: userDate,
       userComments: userComments,
+      //////connecting calendar////////
+      start: userDate,
+      end: userDate,
     });
+    new Calendar({
+      id: "#color-calendar",
+      eventsData: userObject,
+      startWeekday: 0,
+      fontFamilyHeader: "Oswald",
+      fontFamilyWeekdays: "Oswald",
+      fontFamilyBody: "Oswald",
+    });
+    console.log(userObject);
+
     while (calendarWrapper.firstChild) {
       calendarWrapper.removeChild(calendarWrapper.firstChild);
     }
@@ -124,6 +143,7 @@ submit.addEventListener("click", function () {
       );
       calendarWrapper.append(eachUserWrapper);
     }
-    console.log(userObject);
+
+    document.querySelector("form").reset();
   }
 });
